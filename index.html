@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>Bondietti - Resume</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Brian Bondietti</h1>
+        <p>bondiettibrian@gmail.com | 503-214-0447</p>
+    </div>
+    <div class="container">
+        <h2>Small Business Owner</h2>
+        <p>Shiny Windows, Inc., Billings, MT</p>
+        <p>October 2006 - March 2022</p>
+        <button onclick="toggleDetails('details1')">Details</button>
+        <div id="details1" class="details">
+            <ul>
+                <li>Successfully owned and operated a small window cleaning business in Billings, MT, and still operate it on a small scale in Portland, OR.</li>
+                <li>Supported myself and two part-time employees by handling book-keeping, scheduling, sales, hiring, and customer service.</li>
+                <li>Managed occasional handyman type projects from renting lifts to repairing screens, trim and construction clean-up.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Frame Assembly</h2>
+        <p>Northwest Framing, Portland, OR</p>
+        <p>Seasonal 2019</p>
+        <button onclick="toggleDetails('details2')">Details</button>
+        <div id="details2" class="details">
+            <ul>
+                <li>Assisted in assembling art frames in a factory for the busy holiday season, ensuring quality control before shipping.</li>
+                <li>Examined final pieces (wires and hangers, frames, art, mats, glass/acrylic) for flaws, dust, and scratches.</li>
+                <li>Filled in for the shipping department and other departments as needed.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Sign Shop Production</h2>
+        <p>Sign & Design</p>
+        <p>August 2003-May 2005</p>
+        <button onclick="toggleDetails('details3')">Details</button>
+        <div id="details3" class="details">
+            <ul>
+                <li>Assisted in the production of signs, from graphic design skills to CAD Design software and CNC machines, painting, light assembly, and construction.</li>
+                <li>Worked at two different sign shops during this time, Sign & Design and Permaletter.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Newspaper Production Manager</h2>
+        <p>Cut Bank Pioneer Press, Cut Bank MT</p>
+        <p>May 1994-May 2003</p>
+        <button onclick="toggleDetails('details4')">Details</button>
+        <div id="details4" class="details">
+            <ul>
+                <li>Did graphic design and darkroom work, assisted every other position with their needs, and worked with customers to achieve their goals for graphic design and printing.</li>
+                <li>Served as the newspaper's sports and special events photographer, wrote a few articles, and was the newspaper's ad-designer.</li>
+                <li>Assisted the newspaper in transitioning from traditional ways to the current online and digital mode.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copy and paste the container div for more jobs -->
+    <div class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+                <ul>
+                    <li>Adobe Suite.</li>
+                    <li>Quickbooks.</li >
+                    <li>Figma.</li>
+                    <li>HTML/CSS.</li >
+                    <li>Handyman.</li>
+                    <li>Typing 75wpm, 98% accuracy.</li >
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Follow me on:</p>
+        <a href="https://www.facebook.com/john.doe"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com/john_doe"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/john-doe"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
