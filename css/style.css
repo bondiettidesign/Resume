@@ -47,22 +47,31 @@
 
 .skills-container {
   width: calc(33.33% - 20px);
-  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-left: 20px;
+
 }
 
 .skills-list {
   margin: 20px;
 }
 
-.skills-container h2 {
-  margin-top: 0;
+.logo-container {
+  display: flex;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 .logo {
   float: left;
+  margin-left: 20px;
 }
 
 .footer {
+  width: 100%;  
+  max-width: 800px;
+  margin: 0 auto;
   background-color: #663399;
   color: white;
   padding-left: 40px;
@@ -129,9 +138,10 @@ button {
 
   .details-container {
     flex-basis: 100%;
+  }
 
   .skills-container {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-}
+  }
